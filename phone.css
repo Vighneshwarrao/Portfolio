@@ -1,15 +1,4 @@
 @media (max-width: 480px){
-    nav{
-        display: block;
-        text-align: start;
-    }
-    nav ul{
-       justify-content: start;
-    }
-    .left{
-        margin: 20px;
-        width: 100%
-    }
     .section1{
         width: 100%;
     }
