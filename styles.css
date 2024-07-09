@@ -2,13 +2,13 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
     background-color: rgb(22, 8, 36);
     color: white;
     font-family: "Poppins", sans-serif;
-
 }
 
 .left {
@@ -17,7 +17,7 @@ body {
 }
 
 .right {
-    margin: 30px;
+    margin: 30px 0;
 }
 
 nav {
@@ -31,7 +31,6 @@ nav {
     top: 0;
     left: 0;
     z-index: 1000;
-
 }
 
 nav ul {
@@ -40,16 +39,19 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 23px;
+    margin: 0 12px;
     list-style: none;
 }
 
-.right ul li a {
+nav ul li a {
     text-decoration: none;
     color: white;
+    transition: font-size 0.3s ease;
 }
 
-.right ul li a:hover {
+nav ul li a:hover {
+    text-decoration: none;
+    color: white;
     font-size: 1.1rem;
 }
 
@@ -76,14 +78,12 @@ nav ul li {
 }
 
 .leftsec2 img {
-
     margin: 70px;
     height: 200px;
     width: 200px;
 }
 
 .rightsec img {
-
     margin: 70px;
     height: 350px;
     width: 400px;
@@ -98,16 +98,9 @@ nav ul li {
 }
 
 .section2 {
-    margin: 0px 80px;
+    margin: 0 80px;
     display: flex;
     justify-content: space-around;
-}
-
-hr {
-    border: 0;
-    background: rgb(95, 56, 132);
-    height: 1.2px;
-    margin: 40px 85px;
 }
 
 div h1 {
@@ -120,13 +113,13 @@ div h1 {
 
 footer {
     background: rgb(21, 16, 25);
-
 }
 
 .footer {
     display: flex;
     justify-content: left;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 
 .footer-first {
@@ -137,7 +130,6 @@ footer {
 .details {
     margin: 25px;
     justify-content: space-evenly;
-
 }
 
 .email {
@@ -157,15 +149,11 @@ footer {
 .section3 {
     margin: 120px 80px;
     display: flex;
-
 }
-
-
 
 .skills ul {
     display: flex;
     margin: 20px 30px;
-
 }
 
 .skills ul li {
@@ -188,10 +176,8 @@ footer {
 }
 
 .section4 {
-
     display: flex;
     justify-content: space-around;
-
 }
 
 .leftsec3 {
@@ -243,22 +229,25 @@ footer {
     border-radius: 8px;
     border-color: white;
 }
-.row1{
+
+.row1 {
     margin: 100px 200px;
 }
-.certi{
+
+.certi {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;;
+    justify-content: space-evenly;
 }
+
 .certi li button {
     position: relative;
     border: none;
     outline: none;
-    overflow: none;
-    float: none;
+    overflow: hidden;
 }
-.certi li button .overlay{
+
+.certi li button .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -267,7 +256,7 @@ footer {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
+    transition: 0.5s ease;
     background-color: rgba(66, 59, 59, 0.5);
     color: white;
     display: flex;
@@ -275,14 +264,38 @@ footer {
     align-items: center;
     font-size: 20px;
 }
-.certi li button img{
+
+.certi li button img {
     height: 300px;
     width: 300px;
-
 }
-.certi button:hover .overlay{
+
+.certi button:hover .overlay {
     opacity: 1;
 }
-.certi .overlay p:hover{
+
+.certi .overlay p:hover {
     font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .section1, .section2, .section3, .section4 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .leftsec, .rightsec {
+        margin: 0;
+        width: 100%;
+    }
+    .skills ul {
+        flex-direction: column;
+    }
+    .skills ul li {
+        margin: 20px 0;
+    }
+    .leftsec3, .rightsec3 {
+        width: 100%;
+        margin: 0;
+    }
 }
