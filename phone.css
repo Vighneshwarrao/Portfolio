@@ -1,0 +1,51 @@
+@media (max-width: 480px){
+    nav{
+        display: block;
+        text-align: start;
+    }
+    nav ul{
+       justify-content: start;
+    }
+    .left{
+        margin: 20px;
+        width: 100%
+    }
+    .section1{
+        width: 100%;
+    }
+    .leftsec {
+        margin: 150px -20px;
+        width: 50%;
+        font-size: 1.2rem;
+    }
+    .rightsec img {
+        margin: 120px 0;
+        height: 200px;
+        width: 200px;
+    }
+    .section1 .leftsec button {
+        height: 40px;
+        width: 70px;
+        font-size: 0.6rem;
+    }
+    .section2{
+        width: 100%;
+        margin: -100px 0;
+    }
+    .leftsec2{
+        height: 30%;
+        margin: 10px 0;
+    }
+    .leftsec2 img {
+        margin: 0 23px;
+        height: 100px;
+        width: 100px;
+    }
+    div h1 {
+        font-size: 1.5rem;
+    }
+    .about-me {
+        margin: 8px 0;
+        font-size: 0.9rem ;
+    }
+}
