@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vighneshwar's Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio.</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="#section1">Home</a></li>
+                    <li> <a href="#section2">About</a></li>
+                    <li> <a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li> <a href="#projects">Projects </a></li>
+                    <li> <a href="#Contact">Contact </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="section1" id="section1">
+        <div class="leftsec">
+            <div>Hello,I'm <br> <span class="purple">Bandaru Vighneshwar Rao</span> </div>
+            <div> and I'm a <span id="element"> </span></div>
+            <button onclick="resume()">View Resume</button>
+        </div>
+        <div class="rightsec"> <img src="dev.png" alt="nthg"></div>
+    </div>
+    <div class="section2" id="section2">
+        <div class="leftsec2"><img src="passport.png" alt="nthg"></div>
+        <div class="rightsec2" id="About">
+            <h1>About <span class="purple">Me</span></h1>
+            <div class="about-me">
+                <p>I am Bandaru Vighneshwar Rao, currently pursuing B.Tech in Computer Science and Engineering with a
+                    specialization in AI & ML at CMR Institute of Technology, maintaining a CGPA of 8.5. I have
+                    developed strong skills in Java, Python, HTML, CSS, SQL, and Data Structures and Algorithms. I have
+                    earned a 5-star badge in Java from HackerRank and obtained certificates in the Basics of Python from
+                    Infosys Springboard and Java(Basics) from HackerRank.
+                    My practical experience includes internships in DevOps at EduEngine ,Google AI&ML and Android Development,
+                    providing me with hands-on knowledge in these areas. I have completed several projects, such as a
+                    Library Management System in C, a login page using Python's Tkinter module and MySQL, and a
+                    portfolio website, showcasing my ability to apply theoretical knowledge to real-world problems.These
+                    achievements and experiences underscore my dedication to continuous learning and my capability to
+                    contribute effectively in the field of computer science.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section3" id="skills">
+        <h1> Technical <span class="purple">Skills</span></h1>
+        <div class="skills">
+            <ul>
+                <li class="name"><img src="java.png" alt=""><img src="4star.png" alt=""></li>
+                <li class="name"><img src="python.png" alt=""><img src="4star.png" alt=""></li>
+                <li class="name"><img src="c.png" alt=""><img src="4star.png" alt=""></li>
+            </ul>
+            <ul>
+                <li class="name"><img src="html.png" alt=""><img src="3star.png" alt=""></li>
+                <li class="name"><img src="css.png" alt=""><img src="3star.png" alt=""></li>
+                <li class="name"><img src="dsa.png" alt=""><img src="3star.png" alt=""></li>
+            </ul>
+            <ul>
+                <li class="name"><img src="sql.png" alt=""><img class="sql" src="3star.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section5" id="certificates">
+        <h1 style="margin: 0 73px;">Certificates <span class="purple">&</span> Internships</h1>
+        <div class="row1">
+            <ul class="certi">
+                <li>
+                    <button onclick="expand1()"><img src="javabasics.png" alt="">
+                        <div class="overlay"><p>Java Basics</p>
+
+                        </div>
+                    </button>
+                </li>
+                <li><button onclick="expand2()"><img src="pythonbasics.png" alt="">
+                        <div class="overlay"><p>Python Basics</p></div>
+                    </button></li>
+            </ul>
+        </div>
+        <div class="row1">
+            <ul class="certi">
+                <li><button onclick="expand3()"><img src="android.png" alt="">
+                        <div class="overlay"><p>Android devloper</p></div>
+                    </button></li>
+                <li><button onclick="expand4()"><img src="aiml.png" alt="">
+                        <div class="overlay"><p>Google AIML</p></div>
+                    </button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section4" id="projects">
+        <div class="leftsec3">
+            <div class="pro">
+                <h1>My <span class="purple">Projects</span></h1>
+            </div>
+            <ul>
+                <li><img src="project1.png" alt=""></li>
+                <li><img src="project2.png" alt=""></li>
+                <li><img src="project3.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="rightsec3">
+            <ul>
+                <li>
+                    <h3>Library Management System</h3><br>
+                    <p>A C-based library management system project manages books, users, and transactions through
+                        console-based input/output. It utilizes data structures arrays to store information. The system
+                        includes functionalities for adding, deleting, searching, and issuing books. Without a backend
+                        database, all data is handled in-memory or through basic file operations.</p>
+                    <button onclick="project1()" class="btn">View</button>
+                </li>
+
+
+                <li>
+                    <h3>Login Page</h3><br>
+                    <p>A login and signup page using Python's Tkinter and MySQL involves creating a GUI for user
+                        authentication and registration. Tkinter provides the interface with input fields for username
+                        and password. Signup details are stored in a MySQL database. Login credentials are verified
+                        against the database, ensuring secure user access an management.</p>
+
+                    <button onclick="project2()" class="btn">View</button>
+                </li>
+                <li>
+                    <h3>Personal Portfolio Website </h3><br>
+                    <p>A personal portfolio project using HTML, CSS, and JavaScript showcases a student's profile,
+                        skills, and projects. HTML structures the content, CSS enhances the design, and JavaScript adds
+                        interactivity. Features include an "About Me" section, skills overview, project gallery, and
+                        contact form, providing a comprehensive digital resume and portfolio.</p>
+                    <button onclick="project3()" class="btn">View</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer" id="Contact">
+            <div class="footer-first">
+                <h3>My Contacts</h3>
+                <div class="details">
+                    <div class="email"><span class="pur">email :</span> vighneshwarraobandaru@gmail.com</div>
+                    <div class=email><span class="pur">contact :</span> 7396630806 </div>
+                    <div class="email"><span class="pur"> LinkdIn : </span>Vighneshwar rao</div>
+                    <div class="email"><span class="pur">Instagram :</span> Vighneshwar_rao </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="rights"> &#169; Copyrights reserved to Vighneshwar Rao</div>
+    </footer>
+</body>
+
+
+<!-- Load library from the CDN -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+    var typed = new Typed('#element', {
+        strings: ['Software Engineer'],
+        typeSpeed: 100,
+        backspeed: 100,
+        backdelay: 1000,
+        loop: true
+    });
+    function resume() {
+        window.location.href = "Resume.pdf";
+    }
+
+    function project1() {
+        window.location.href = "https://github.com/Vighneshwarrao/library-management";
+    }
+    function project2() {
+        window.location.href = "https://github.com/Vighneshwarrao/login-page";
+    }
+    function project3() {
+        window.location.href = "https://github.com/Vighneshwarrao/Portfolio";
+    }
+    function expand1() {
+        window.location.href = "java_basic certificate.pdf";
+    }
+    function expand2() {
+        window.location.href = "pythonbasics.pdf";
+    }
+    function expand3() {
+        window.location.href = "android.pdf";
+    }
+    function expand4() {
+        window.location.href = "AIML.pdf";
+    }
+</script>
+
+</html>

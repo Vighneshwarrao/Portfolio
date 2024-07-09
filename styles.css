@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(22, 8, 36);
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.left {
+    font-size: 1.9rem;
+    margin: 17px 30px;
+}
+
+.right {
+    margin: 30px;
+}
+
+nav {
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(37, 19, 51);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+}
+
+nav ul {
+    justify-content: center;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 23px;
+    list-style: none;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.right ul li a:hover {
+    font-size: 1.1rem;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.leftsec {
+    margin: 150px;
+    width: 30%;
+    font-size: 1.9rem;
+}
+
+.section1 .leftsec button {
+    margin-top: 23px;
+    padding: 8px;
+    font-size: 1.2rem;
+    background-color: rgb(70, 36, 104);
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.leftsec2 img {
+
+    margin: 70px;
+    height: 200px;
+    width: 200px;
+}
+
+.rightsec img {
+
+    margin: 70px;
+    height: 350px;
+    width: 400px;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+#element {
+    color: blueviolet;
+}
+
+.section2 {
+    margin: 0px 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+hr {
+    border: 0;
+    background: rgb(95, 56, 132);
+    height: 1.2px;
+    margin: 40px 85px;
+}
+
+div h1 {
+    font-size: 2.6rem;
+}
+
+.about-me {
+    margin: 20px 40px;
+}
+
+footer {
+    background: rgb(21, 16, 25);
+
+}
+
+.footer {
+    display: flex;
+    justify-content: left;
+    margin-top: 40px;
+}
+
+.footer-first {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.details {
+    margin: 25px;
+    justify-content: space-evenly;
+
+}
+
+.email {
+    margin: 25px;
+}
+
+.pur {
+    color: rgb(108, 55, 158);
+}
+
+.rights {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+}
+
+.section3 {
+    margin: 120px 80px;
+    display: flex;
+
+}
+
+
+
+.skills ul {
+    display: flex;
+    margin: 20px 30px;
+
+}
+
+.skills ul li {
+    font-size: 1.4rem;
+    margin: 0 140px;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.skills ul li img {
+    margin: -23px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.skills .sql {
+    margin: -120px;
+    width: 150px;
+    margin-bottom: -250px;
+}
+
+.section4 {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.leftsec3 {
+    margin: 0 70px;
+    width: 30%;
+}
+
+.leftsec3 ul li {
+    list-style: none;
+}
+
+.leftsec3 ul li img {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    padding: 40px;
+    justify-content: space-evenly;
+}
+
+.rightsec3 {
+    width: 30%;
+    margin: 120px 200px;
+}
+
+.rightsec3 ul {
+    margin: 20px -180px;
+}
+
+.rightsec3 ul li {
+    list-style: none;
+    height: 300px;
+    padding: 20px;
+}
+
+.rightsec3 ul li h3 {
+    font-size: 1.6rem;
+}
+
+.rightsec3 ul li p {
+    margin: 0 80px;
+}
+
+.btn {
+    margin: 23px;
+    padding: 8px;
+    font-size: 1rem;
+    background-color: rgb(70, 36, 104);
+    color: white;
+    border-radius: 8px;
+    border-color: white;
+}
+.row1{
+    margin: 100px 200px;
+}
+.certi{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;;
+}
+.certi li button {
+    position: relative;
+    border: none;
+    outline: none;
+    overflow: none;
+    float: none;
+}
+.certi li button .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(66, 59, 59, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.certi li button img{
+    height: 300px;
+    width: 300px;
+
+}
+.certi button:hover .overlay{
+    opacity: 1;
+}
+.certi .overlay p:hover{
+    font-size: 1.5rem;
+}
