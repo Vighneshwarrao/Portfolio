@@ -13,14 +13,14 @@ body {
 
 .left {
     font-size: 1.9rem;
-   margin: 17px 30px;
+    margin: 17px 30px;
 }
 
 .right {
     margin: 30px 0px;
 }
 
-nav{
+nav {
     height: 70px;
     width: 100%;
     text-align: center;
@@ -34,6 +34,7 @@ nav{
     z-index: 1000;
 
 }
+
 nav ul {
     justify-content: center;
     display: flex;
@@ -43,20 +44,26 @@ nav ul li {
     margin: 0 12px;
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: white;
+    transition: all .3s ease-in-out 0s;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
+    color: rgb(125, 35, 208);
+    font-size: 1.15rem;
 }
+
 .section1 {
     display: flex;
     justify-content: space-around;
     margin: 30px;
+    animation: moveup 1.5s linear 0s 1;
 }
+
 .leftsec {
     margin: 150px;
     width: 30%;
@@ -81,12 +88,11 @@ nav ul li a:hover{
 }
 
 .rightsec img {
-
     margin: 70px;
     height: 350px;
     width: 400px;
+    animation: move 1.5s linear 0s 1;
 }
-
 .purple {
     color: blueviolet;
 }
@@ -234,14 +240,18 @@ footer {
     border-radius: 8px;
     border-color: white;
 }
-.row1{
+
+.row1 {
     margin: 100px 200px;
 }
-.certi{
+
+.certi {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;;
+    justify-content: space-evenly;
+    ;
 }
+
 .certi li button {
     position: relative;
     border: none;
@@ -249,7 +259,8 @@ footer {
     overflow: none;
     float: none;
 }
-.certi li button .overlay{
+
+.certi li button .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -266,14 +277,37 @@ footer {
     align-items: center;
     font-size: 20px;
 }
-.certi li button img{
+
+.certi li button img {
     height: 300px;
     width: 300px;
 
 }
-.certi button:hover .overlay{
+
+.certi button:hover .overlay {
     opacity: 1;
 }
-.certi .overlay p:hover{
+
+.certi .overlay p:hover {
     font-size: 1.5rem;
+}
+
+@keyframes move {
+    from {
+        margin: -70px;
+        opacity: 0;
+    }
+
+    to {
+        margin: 70px;
+        opacity: 1;
+    }
+}
+@keyframes moveup {
+    from{
+        margin: -80px;
+    }
+    to{
+        margin: 30px;
+    }
 }
